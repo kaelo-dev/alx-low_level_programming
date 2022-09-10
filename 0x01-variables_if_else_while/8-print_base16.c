@@ -1,21 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
- *
+ * main - This program prints all the numbers of base 16
+ * in lowercase, followed by a new line.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int d;
-	char low;
+	char ch;
+	int i;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
-		putchar('\n');
+	for (ch = '0'; ch <= '9'; ch++)
+		putchar(ch);
+	for (i = 97; i <= 102; i++)
+		putchar((int)i);
+
+	putchar('\n');
 
 	return (0);
 }

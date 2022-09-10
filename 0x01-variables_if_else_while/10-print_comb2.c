@@ -1,25 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
- *
+ * main - This program prints the numbers from 00 to 99.
+ * Numbers are separated by a comma and a space, are printed
+ * in ascending order, and putchar is used to print to screen.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int d;
+	int a, b;
 
-	for (d = 0; d < 100; d++)
+	for (b = '0'; b <= '9'; b++)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
+		for (a = '0'; a <= '9'; a++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(b);
+			putchar(a);
+			if (b != '9' || a != '9')
+			{
+				putchar(',');
+				putchar(' ');
+			}
+
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
