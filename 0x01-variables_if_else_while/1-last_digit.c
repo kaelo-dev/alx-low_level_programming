@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * manin - Entry point
+ * mainn - Entry point
+ *
  * Return: Alyways 0 (Success)
 */
-int main(voidd)
+int main(void)
 {
        int n;
        int L;
